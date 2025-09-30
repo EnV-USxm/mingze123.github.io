@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Level 5 终章</title>
+    <style>
+        body{background:#222;color:#eee;font-family:monospace;padding:40px;text-align:center}
+        h1{letter-spacing:4px}
+    </style>
+</head>
+<body>
+    <h1>恭喜你，走到最后一步。</h1>
+    <p>没有按钮、没有链接。</p>
+    <p>只有<strong>“按下真相”</strong>的人，才能离开。</p>
+    <script>
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'E' || event.key === 'e') {
+                window.location.href = 'theend.html';
+            }
+        });
+    </script>
+</body>
+</html>

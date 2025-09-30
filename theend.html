@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <title>Ending</title>
+    <style>
+        html,body{margin:0;height:100%;background:#000;color:#eee;font-family:monospace;overflow:hidden}
+        #roll{position:absolute;top:100%;left:50%;transform:translateX(-50%);white-space:nowrap;font-size:24px;line-height:1.8;
+        animation:scroll 16s linear forwards}
+        @keyframes scroll{0%{top:100%}100%{top:-100%}}
+    </style>
+</head>
+<body>
+    <div id="roll">
+            致谢<br>
+        策划    KimiAI<br>
+        代码    Seth<br>
+        美术    PNG 与 CSS<br>
+        测试    F12<br>
+        制作时长 2h<br>
+        特别感谢 每一位肯按 E 的你<br>
+        <br>
+        谢谢游玩，再见！
+    </div>
+    <script>
+        document.getElementById('roll').addEventListener('animationend', () => {
+        setTimeout(() => window.close(), 500);
+        });
+    </script>
+</body>
+</html>
